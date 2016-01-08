@@ -1,5 +1,5 @@
 var transform = require('./lib/transform');
-var translate= require('./lib/translate');
+var translate = require('./lib/translate');
 var mask = require('./lib/mask');
 var slice = require('./lib/slicer');
 var logic = require('./lib/logic');
