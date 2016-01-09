@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/jillix/flow-tools#readme",
   "dependencies": {
-    "json-logic": "adioo/json-logic-js#commonjs"
+    "json-logic-js": "adioo/json-logic-js#commonjs"
   }
 }
