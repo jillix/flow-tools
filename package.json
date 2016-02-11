@@ -21,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/jillix/flow-tools/issues"
   },
-  "homepage": "https://github.com/jillix/flow-tools#readme",
-  "dependencies": {
-    "json-logic-js": "adioo/json-logic-js#commonjs"
-  }
+  "homepage": "https://github.com/jillix/flow-tools#readme"
 }
