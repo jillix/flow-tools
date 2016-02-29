@@ -4,7 +4,7 @@
   "description": "A collection of handy data chunk manipulators.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap --cov test/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/jillix/flow-tools/issues"
   },
-  "homepage": "https://github.com/jillix/flow-tools#readme"
+  "homepage": "https://github.com/jillix/flow-tools#readme",
+  "devDependencies": {
+    "tap": "^5.6.0"
+  },
+  "dependencies": {
+    "libobject": "github:jillix/libobject"
+  }
 }
