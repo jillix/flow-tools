@@ -26,6 +26,7 @@
     "tap": "^5.6.0"
   },
   "dependencies": {
+    "json-logic-js": "^1.0.1",
     "libobject": "github:jillix/libobject"
   }
 }
