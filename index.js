@@ -3,6 +3,7 @@ var transform = require('./lib/transform');
 var translate = require('./lib/translate');
 var logic = require('./lib/logic');
 var mask = require('./lib/mask');
+var stringify = require('./lib/stringify');
 //var slice = require('./lib/slicer');
 //var join = require('./lib/join');
 
@@ -28,6 +29,23 @@ exports.flat = function (options, data, next) {
     next(null, data);
 };
 
+exports.parse = function (options, data, next) {
+
+    if (!data.data) {
+        return next(null, data);
+    }
+
+    // try and parse buffer
+    try {
+        data.data = JSON.parse(data.data.toString());
+    } catch (error) {
+        return next(error);
+    }
+
+    return next(null, data);
+}
+
+exports.stringify = stringify;
 exports.transform = transform;
 exports.translate = translate;
 exports.logic = logic;
