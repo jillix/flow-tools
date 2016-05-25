@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "json-logic-js": "^1.0.1",
-    "libobject": "github:jillix/libobject"
+    "libobject": "github:jillix/libobject",
+    "qs": "^0.0.2"
   }
 }
