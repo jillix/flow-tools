@@ -8,10 +8,55 @@
     "@type": "Module",
     "name": "flow-tools",
     "version": "0.0.1",
-    "description": "Example module for flow",
+    "description": "A collection of handy data chunk manipulators.",
     "author": "jillix",
     "gitRepository": "git+https://github.com/jillix/flow-tools.git",
     "exports": [
+        {
+            "@type": "DataHandler",
+            "name": "deep",
+            "options": []
+        },
+        {
+            "@type": "DataHandler",
+            "name": "flat",
+            "options": []
+        },
+        {
+            "@type": "DataHandler",
+            "name": "parse",
+            "options": []
+        },
+        {
+            "@type": "DataHandler",
+            "name": "stringify",
+            "options": []
+        },
+        {
+            "@type": "DataHandler",
+            "name": "transform",
+            "options": []
+        },
+        {
+            "@type": "DataHandler",
+            "name": "translate",
+            "options": []
+        },
+        {
+            "@type": "DataHandler",
+            "name": "logic",
+            "options": []
+        },
+        {
+            "@type": "DataHandler",
+            "name": "mask",
+            "options": []
+        },
+        {
+            "@type": "DataHandler",
+            "name": "slice",
+            "options": []
+        }
     ],
     "options": [
     ]
