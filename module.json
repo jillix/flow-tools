@@ -1,10 +1,10 @@
 {
     "@context": [
-        "http://localhost:8080/context/module.jsonld",
+        "http://schema.jillix.net/context/module.jsonld",
         {
         }
     ],
-    "@id": "https://github.com/jillix/flow-tools#readme",
+    "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json",
     "@type": "Module",
     "name": "flow-tools",
     "version": "0.0.1",
@@ -13,51 +13,60 @@
     "gitRepository": "git+https://github.com/jillix/flow-tools.git",
     "exports": [
         {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#deep",
             "@type": "DataHandler",
             "name": "deep",
-            "options": []
+            "args": []
         },
         {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#flat",
             "@type": "DataHandler",
             "name": "flat",
-            "options": []
+            "args": []
         },
         {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#parse",
             "@type": "DataHandler",
             "name": "parse",
-            "options": []
+            "args": []
         },
         {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#stringify",
             "@type": "DataHandler",
             "name": "stringify",
-            "options": []
+            "args": []
         },
         {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#transform",
             "@type": "DataHandler",
             "name": "transform",
-            "options": []
+            "args": []
         },
         {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#translate",
             "@type": "DataHandler",
             "name": "translate",
-            "options": []
+            "args": []
         },
         {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#logic",
             "@type": "DataHandler",
             "name": "logic",
-            "options": []
+            "args": []
         },
         {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#mask",
             "@type": "DataHandler",
             "name": "mask",
-            "options": []
+            "args": []
         },
         {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#slice"
             "@type": "DataHandler",
             "name": "slice",
-            "options": []
+            "args": []
         }
     ],
-    "options": [
+    "args": [
     ]
 }
