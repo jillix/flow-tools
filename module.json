@@ -1,0 +1,72 @@
+{
+    "@context": [
+        "http://schema.jillix.net/context/module.jsonld",
+        {
+        }
+    ],
+    "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json",
+    "@type": "Module",
+    "name": "flow-tools",
+    "version": "0.0.1",
+    "description": "A collection of handy data chunk manipulators.",
+    "author": "jillix",
+    "gitRepository": "git+https://github.com/jillix/flow-tools.git",
+    "exports": [
+        {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#deep",
+            "@type": "DataHandler",
+            "name": "deep",
+            "args": []
+        },
+        {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#flat",
+            "@type": "DataHandler",
+            "name": "flat",
+            "args": []
+        },
+        {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#parse",
+            "@type": "DataHandler",
+            "name": "parse",
+            "args": []
+        },
+        {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#stringify",
+            "@type": "DataHandler",
+            "name": "stringify",
+            "args": []
+        },
+        {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#transform",
+            "@type": "DataHandler",
+            "name": "transform",
+            "args": []
+        },
+        {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#translate",
+            "@type": "DataHandler",
+            "name": "translate",
+            "args": []
+        },
+        {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#logic",
+            "@type": "DataHandler",
+            "name": "logic",
+            "args": []
+        },
+        {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#mask",
+            "@type": "DataHandler",
+            "name": "mask",
+            "args": []
+        },
+        {
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#slice"
+            "@type": "DataHandler",
+            "name": "slice",
+            "args": []
+        }
+    ],
+    "args": [
+    ]
+}
