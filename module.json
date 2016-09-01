@@ -61,7 +61,7 @@
             "args": []
         },
         {
-            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#slice"
+            "@id": "https://raw.githubusercontent.com/jillix/flow-tools/master/module.json#slice",
             "@type": "DataHandler",
             "name": "slice",
             "args": []
