@@ -31,7 +31,8 @@ exports.flat = function (options, data, next) {
 
 exports.parse = json.parse;
 exports.stringify = json.stringify;
-exports.transform = transform;
+exports.transform = transform.transform;
+exports.env_transform = transform.env_transform;
 exports.translate = translate;
 exports.logic = logic;
 exports.mask = mask;
