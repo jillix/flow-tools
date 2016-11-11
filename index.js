@@ -1,3 +1,5 @@
+'use strict'
+
 var libob = require('libobject');
 var transform = require('./lib/transform');
 var translate = require('./lib/translate');
@@ -5,9 +7,10 @@ var logic = require('./lib/logic');
 var mask = require('./lib/mask');
 var json = require('./lib/json');
 var slice = require('./lib/slice');
+var emit = require('./lib/emit');
 //var join = require('./lib/join');
 
-exports.deep = function (options, data, next) {
+exports.deep = function (scope, inst, args, data, next) {
 
     data = libob.deep(data);
 
@@ -18,7 +21,7 @@ exports.deep = function (options, data, next) {
     next(null, data);
 };
 
-exports.flat = function (options, data, next) {
+exports.flat = function (scope, inst, args, data, next) {
 
     data = libob.flat(data);
 
@@ -29,9 +32,11 @@ exports.flat = function (options, data, next) {
     next(null, data);
 };
 
+exports.emit = emit;
 exports.parse = json.parse;
 exports.stringify = json.stringify;
-exports.transform = transform;
+exports.transform = transform.transform;
+exports.env_transform = transform.env_transform;
 exports.translate = translate;
 exports.logic = logic;
 exports.mask = mask;
