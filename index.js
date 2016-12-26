@@ -37,6 +37,7 @@ exports.parse = json.parse;
 exports.stringify = json.stringify;
 exports.transform = transform.transform;
 exports.env_transform = transform.env_transform;
+exports.state_transform = transform.state_transform;
 exports.translate = translate;
 exports.logic = logic;
 exports.mask = mask;
