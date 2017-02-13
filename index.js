@@ -10,7 +10,7 @@ var slice = require('./lib/slice');
 var emit = require('./lib/emit');
 //var join = require('./lib/join');
 
-exports.deep = function (scope, inst, args, data, next) {
+exports.deep = function (scope, inst, args, data, stream, next) {
 
     data = libob.deep(data);
 
@@ -21,7 +21,7 @@ exports.deep = function (scope, inst, args, data, next) {
     next(null, data);
 };
 
-exports.flat = function (scope, inst, args, data, next) {
+exports.flat = function (scope, inst, args, data, stream, next) {
 
     data = libob.flat(data);
 
