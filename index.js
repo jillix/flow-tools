@@ -1,35 +1,20 @@
-'use strict'
+'use strict';
 
-var libob = require('libobject');
-var transform = require('./lib/transform');
-var translate = require('./lib/translate');
-var logic = require('./lib/logic');
-var mask = require('./lib/mask');
-var json = require('./lib/json');
-var slice = require('./lib/slice');
-var emit = require('./lib/emit');
-//var join = require('./lib/join');
+const libob = require('libobject');
+const transform = require('./lib/transform');
+const translate = require('./lib/translate');
+const logic = require('./lib/logic');
+const mask = require('./lib/mask');
+const json = require('./lib/json');
+const slice = require('./lib/slice');
+//const join = require('./lib/join');
 
-exports.deep = function (scope, inst, args, data, stream, next) {
-
-    data = libob.deep(data);
-
-    if (data instanceof Error) {
-        return next(data);
-    }
-
-    next(null, data);
+exports.deep = (data) => {
+    return libob.deep(data);
 };
 
-exports.flat = function (scope, inst, args, data, stream, next) {
-
-    data = libob.flat(data);
-
-    if (data instanceof Error) {
-        return next(data);
-    }
-
-    next(null, data);
+exports.flat = (data) => {
+    return libob.flat(data);
 };
 
 exports.emit = emit;
