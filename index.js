@@ -17,7 +17,6 @@ exports.flat = (data) => {
     return libob.flat(data);
 };
 
-exports.emit = emit;
 exports.parse = json.parse;
 exports.stringify = json.stringify;
 exports.transform = transform.transform;
