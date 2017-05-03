@@ -7,6 +7,7 @@ const logic = require('./lib/logic');
 const mask = require('./lib/mask');
 const json = require('./lib/json');
 const slice = require('./lib/slice');
+const array = require('./lib/array');
 //const join = require('./lib/join');
 
 exports.deep = (data) => {
@@ -27,4 +28,5 @@ exports.translate = translate;
 exports.logic = logic;
 exports.mask = mask;
 exports.slice = slice;
+exports.array = array;
 //exports.join = join;
